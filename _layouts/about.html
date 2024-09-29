@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- begin about section -->
+<section class="section about">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="container__inner">
+          
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">
+                <i class="fa-solid fa-user"></i> {{ page.title }}
+              </h2>
+            </div>
+            {% if page.description %}
+              <p class="section__description">
+                {{ page.description }}
+              </p>
+            {% else %}
+              <p class="section__description">No description provided.</p>
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about section -->

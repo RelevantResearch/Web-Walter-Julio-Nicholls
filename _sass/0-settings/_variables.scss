@@ -1,0 +1,79 @@
+// *****************
+// Global Variables
+// *****************
+
+// Spaces
+$base-spacing-unit: 16px;
+
+// Border radius
+$global-radius: 8px;
+
+// Transition
+$global-transition: all .25s;
+
+
+// *****************
+// Typography
+// *****************
+$base-font-size: 16px;
+$base-font-style: normal;
+$base-font-variant: normal;
+$base-font-weight: normal;
+$base-font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;
+$base-line-height: 1.6;
+
+// Headings
+$heading-font-weight: 700;
+$heading-font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+$font-size-h1: 36px;
+$font-size-h2: 28px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
+
+$heading-line-height: 1.3;
+$heading-letter-spacing: -0.5px;
+
+
+
+/*
+ * The SCSS variables
+ */
+
+/* sidebar */
+
+$sidebar-width: 260px !default; /* the basic width */
+$sidebar-width-large: 300px !default; /* screen width: >= 1650px */
+$sb-btn-gap: 0.8rem !default;
+$sb-btn-gap-lg: 1rem !default;
+
+/* other framework sizes */
+
+$topbar-height: 3rem !default;
+$search-max-width: 200px !default;
+$footer-height: 5rem !default;
+$footer-height-large: 6rem !default; /* screen width: < 850px */
+$main-content-max-width: 1250px !default;
+$radius-sm: 6px !default;
+$radius-lg: 10px !default;
+$back2top-size: 2.75rem !default;
+
+/* syntax highlight */
+
+$code-font-size: 0.85rem !default;
+$code-header-height: 2.25rem !default;
+$code-dot-size: 0.75rem !default;
+$code-dot-gap: 0.5rem !default;
+$code-icon-width: 1.75rem !default;
+
+/* fonts */
+
+$font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+// Define all your variables here
+$global-transition: all 0.3s ease-in-out;
+$border-color: #ccc; // Example of other variable
+$background-alt-color: #f9f9f9; // Example of other variable
+$mobile: 768px; // Example of a mobile breakpoint

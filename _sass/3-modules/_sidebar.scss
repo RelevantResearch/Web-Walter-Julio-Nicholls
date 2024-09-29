@@ -1,0 +1,133 @@
+/* Variables */
+$mobile: 1024px; /* Adjust the breakpoint as needed */
+
+/* Sidebar for desktop screens - always visible */
+.sidebar {
+    position: fixed; /* Keep sidebar fixed on the left */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    height: 100%; /* Full height */
+    width: 352px; /* Width of the sidebar */
+    background-color: var(--background-alt-color);
+    padding: 20px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    z-index: 1000; /* Stack above other content */
+    transition: transform 0.3s ease; /* Smooth transition for open/close */
+
+    ul {
+        list-style-type: none; /* Remove default list styling */
+        padding: 0; /* Remove padding */
+
+        li {
+            margin-bottom: 20px; /* Space between list items */
+
+            a {
+                display: flex; /* Use flex to align icon and text */
+                align-items: center; /* Center vertically */
+                text-decoration: none; /* Remove underline from links */
+                font-size: 18px; /* Font size for links */
+                color: var(--text-color); /* Link color */
+                transition: color 0.3s ease; /* Smooth color transition */
+
+                i {
+                    margin-right: 8px; /* Add space between icon and text */
+                }
+
+                &:hover {
+                    color: var(--link-color-hover); /* Color on hover */
+                }
+            }
+        }
+    }
+
+    .author__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding-left: 32px;
+        margin-bottom: 19px;
+        margin-top: 60px;
+
+        @media (max-width: $mobile) {
+            padding-left: 0px; /* Adjust padding for mobile */
+            margin-top: 30px; /* Adjust margin for mobile */
+        }
+    }
+
+    /* Close button hidden on large screens */
+    .close-btn {
+        display: none; /* Hidden by default */
+    }
+
+    @media (max-width: $mobile) {
+        top: 60px; /* Push down below the mobile header */
+        height: calc(100% - 60px); /* Adjust height to fit below the mobile header */
+        transform: translateX(-100%); /* Sidebar hidden by default */
+
+        &.open {
+            transform: translateX(0); /* Show sidebar when open */
+        }
+
+        /* Show the close button on smaller screens */
+        .close-btn {
+            display: block; /* Show close button */
+            font-size: 24px; /* Size for close button */
+            font-weight: bold; /* Bold font */
+            cursor: pointer; /* Pointer cursor */
+            color: var(--text-color); /* Color for close button */
+            position: absolute; /* Absolute position */
+            top: 10px; /* Position from top */
+            right: 10px; /* Position from right */
+        }
+    }
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: none; /* Hidden by default */
+    z-index: 1001; /* Stack above other content */
+
+    @media (max-width: $mobile) {
+        display: flex; /* Show header on mobile */
+        justify-content: space-between; /* Space between items */
+        align-items: center; /* Align items vertically */
+        background-color: black; /* Header background color */
+        padding: 10px 20px; /* Padding for header */
+        color: white; /* Header text color */
+        font-size: 18px; /* Font size for header */
+        position: fixed; /* Fixed position at the top */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        z-index: 1001; /* Stack above other content */
+
+        .menu-title {
+            font-weight: bold; /* Bold font for menu title */
+        }
+
+        .sidebar-toggle {
+            font-size: 24px; /* Size for toggle button */
+            cursor: pointer; /* Pointer cursor */
+            color: white; /* Color for toggle button */
+            z-index: 1001; /* Stack above other content */
+        }
+
+        .social-links {
+            margin-top: auto; /* Pushes the social links to the bottom of the sidebar */
+            padding-top: 20px; /* Optional: Adds some spacing above the social links */
+            display: flex; /* Optional: Makes social links align horizontally */
+            justify-content: space-around; /* Optional: Spreads out social links evenly */
+        }
+    }
+}
+
+/* Page content styles */
+.content {
+    margin-left: -34px; /* Margin for desktop layout */
+    transition: margin-left 0.3s ease; /* Smooth margin transition */
+
+    @media (max-width: $mobile) {
+        margin-left: 0; /* No margin on mobile */
+    }
+}

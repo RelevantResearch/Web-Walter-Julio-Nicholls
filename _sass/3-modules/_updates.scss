@@ -1,0 +1,33 @@
+/* Latest Updates Section Styles */
+.section.updates {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .section.updates .section__title a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .section.updates .section__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .updates__content {
+    font-size: 16px;
+  }
+  
+  .updates__content h2 {
+    font-size: 24px;
+  }
+  
+  .updates__content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .updates__content li {
+    margin-bottom: 10px;
+  }
+  

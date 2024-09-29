@@ -1,0 +1,48 @@
+{% if site.data.settings.publication.enable %}
+<!-- begin publication section -->
+<section class="section publication">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            {% if site.data.settings.publication.publication_title %}
+              <h2 class="section__title">
+                <a href="{{ site.data.settings.publication.publication_page_url }}">{{ site.data.settings.publication.publication_title }}</a>
+              </h2>
+              <a class="section__link" href="{{ '/books' | relative_url }}">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+            {% else %}
+              <h2 class="section__title">{{ site.data.settings.publication.default_title }}</h2>
+            {% endif %}
+          </div>
+          <p class="section__description">{{ site.data.settings.publication.publication_description }}</p>
+
+          <div class="publication-content">
+            <div class="publication__item">
+              <div class="row">
+                <!-- Book Image -->
+                <div class="col col-4 publication__image">
+                  <img src="{{ site.data.settings.publication.publication_image_url }}" alt="Book Image" class="img-fluid">
+                  
+                </div>
+                <!-- Book Description -->
+                <div class="col col-8 publication__details">
+                  <h3 class="publication__title">The Immigrant Rights Movement: The Battle over National Citizenship</h3>
+                  <p class="publication__author"><i>{{ site.data.settings.publication.publication_author }}</i></p>
+                  <p class="publication__description">{{ site.data.settings.publication.publication_description }}</p>
+                  <p>{{ site.data.settings.publication.publication_content | markdownify }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end publication section -->
+{% else %}
+<!-- Debug Information: Publication section is disabled -->
+<p>Publication section is disabled in settings.</p>
+{% endif %}

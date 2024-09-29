@@ -1,0 +1,32 @@
+{% if site.data.settings.about_settings.enable %}
+<!-- begin about -->
+<section class="section about">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="container__inner">
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">
+                <i class="fa-solid fa-user"></i> {{ site.data.settings.about_settings.about_title }}
+              </h2>
+            </div>
+            {% if site.data.settings.about_settings.about_description %}
+              <p class="section__description">
+                {{ site.data.settings.about_settings.about_description }}
+              </p>
+            {% else %}
+              <p class="section__description">No description provided.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about -->
+{% else %}
+<!-- Debug Information: About section is disabled -->
+<p>About section is disabled in settings.</p>
+{% endif %}
+

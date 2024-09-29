@@ -1,0 +1,28 @@
+<!-- Header for Mobile Screens -->
+<div class="mobile-header">
+    <div class="menu-title">MENU</div>
+    <span class="sidebar-toggle">&#9776;</span> <!-- Hamburger Icon -->
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <!-- Close Button for Sidebar on Mobile -->
+    <span class="close-btn">&times;</span> <!-- Close Button -->
+
+    <!-- Include Author Section at the Top of Sidebar -->
+    {% include section-aurthorr.html %}
+
+    <!-- Dynamically loading menu items from _data/settings.yml -->
+    <ul>
+        {% for item in site.data.settings.menu_settings.menu_items %}
+            <li>
+                <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %} {% if item.url == '/' %}home-link{% endif %}">
+                    {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul
+
+    <!-- Include social links at the bottom of the sidebar -->
+    {% include social-links.html %}
+</div>

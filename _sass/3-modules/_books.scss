@@ -1,0 +1,58 @@
+.book-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  padding: 1px;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-item.reverse {
+  flex-direction: row; /* Flips the order for reversed items */
+  display: flex;
+}
+
+.book-image img {
+  max-width: 200px; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-details h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.book-details p {
+  margin: 0;
+  font-size: 1rem;
+  margin-top: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-item, .book-item.reverse {
+    flex-direction: column;
+    text-align: left;
+  }
+  .book-item.reverse {
+    flex-direction: column-reverse; /* Stacks image and text correctly in mobile */
+  }
+  .book-image img {
+    max-width: 100%;
+  }
+  .book-details {
+    max-width: 100%;
+  }
+}

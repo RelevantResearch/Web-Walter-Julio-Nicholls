@@ -1,0 +1,111 @@
+#-------------------------------
+# General Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 4
+paginate_path: "/blog/page/:num"
+
+
+#-------------------------------
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+  videos:
+    output: true
+    permalink: /videos/:slug
+  gallery:
+    output: true
+    permalink: /gallery/:slug
+  research:   
+    output: true
+    permalink: /research/:slug 
+  publications:   
+    output: true
+    permalink: /publications/:slug 
+  updates:   
+    output: true
+    permalink: /updates/:slug 
+  books:   
+    output: true
+    permalink: /books/:slug
+  archieve:   
+    output: true
+    permalink: /archieve/:slug
+
+# Pages Path
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "video"
+  - scope:
+      path: ""
+      type: "gallery"
+    values:
+      layout: "gallery"
+  - scope:   
+      path: ""
+      type: "research"
+    values:
+      layout: "research"
+  - scope:   
+      path: ""
+      type: "publications"
+    values:
+      layout: "publications"
+  - scope:   
+      path: ""
+      type: "updates"
+    values:
+      layout: "updates"
+  - scope:   
+      path: ""
+      type: "books"
+    values:
+      layout: "books"
+  - scope:
+      path: ""
+    values:
+      layout: "archieve"
+      
+sass:
+  sass_dir: _sass
+  style: compressed

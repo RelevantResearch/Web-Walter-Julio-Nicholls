@@ -1,0 +1,38 @@
+/* Research */
+.research {
+    margin-bottom: 15px;
+  }
+  
+  .research__content {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    transition: var(--global-transition);
+    
+    &:hover {
+      background: var(--background-alt-color);
+    }
+  
+    @media (max-width: var(--mobile)) {
+      padding: 20px;
+    }
+  }
+  
+  .research__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .research__description {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--text-alt-color);
+  }
+  
+  .research__body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  

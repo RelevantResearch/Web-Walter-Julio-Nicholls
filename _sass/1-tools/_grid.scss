@@ -1,0 +1,175 @@
+/* Grid */
+$columns: 12;
+$container-base-width: 792px;
+$container-offset: $base-spacing-unit;
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 576px;
+
+$mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
+
+.container {
+  max-width: $container-base-width;
+  padding-left: $container-offset;
+  padding-right: $container-offset;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media (max-width: $desktop) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 560px;
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 480px;
+    padding-left: calc(#{$container-offset} + 4px);
+    padding-right: calc(#{$container-offset} + 4px);
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: ($base-spacing-unit * -1);
+  margin-right: ($base-spacing-unit * -1);
+}
+
+.col {
+  padding-left: $base-spacing-unit;
+  padding-right: $base-spacing-unit;
+}
+
+[class^="col-"] {
+  flex: auto;
+}
+
+@for $i from 0 through $columns {
+  .col-#{$i} {
+    width: calc(#{$i} / #{$columns} * 100%);
+  }
+}
+
+@for $i from 0 through $columns {
+  .push-#{$i} {
+    margin-left: calc(#{$i} / #{$columns} * 100%);
+  }
+}
+
+@for $i from 0 through $columns {
+  .pull-#{$i} {
+    margin-right: calc(#{$i} / #{$columns} * 100%);
+  }
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  padding-left: 0px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+@each $key, $val in $mq {
+
+  // DESKTOP
+  @media(max-width: $desktop) {
+
+    @for $i from 0 through $columns {
+      .col-d-#{$i} {
+        width: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+
+    @for $i from 0 through $columns {
+      .push-d-#{$i} {
+        margin-left: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+
+    @for $i from 0 through $columns {
+      .pull-d-#{$i} {
+        margin-right: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+  }
+
+  // TABLET
+  @media(max-width: $tablet) {
+
+    @for $i from 0 through $columns {
+      .col-t-#{$i} {
+        width: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+
+    @for $i from 0 through $columns {
+      .push-t-#{$i} {
+        margin-left: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+
+    @for $i from 0 through $columns {
+      .pull-t-#{$i} {
+        margin-right: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+  }
+
+  // MOBILE
+  @media(max-width: $mobile) {
+
+    @for $i from 0 through $columns {
+      .col-m-#{$i} {
+        width: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+
+    @for $i from 0 through $columns {
+      .push-m-#{$i} {
+        margin-left: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+
+    @for $i from 0 through $columns {
+      .pull-m-#{$i} {
+        margin-right: calc(#{$i} / #{$columns} * 100%);
+      }
+    }
+    .col-8 {
+      width: 100%; // Take full width on mobile
+      padding-left: 20px; // Reduce padding for mobile
+      padding-right: 20px; // Add right padding on mobile
+      justify-content: flex-start; // Adjust flexbox behavior
+    }
+    .row {
+      display: content;
+      width: 100%
+    }
+    .publication__image img {
+      width: 100%;        /* Force the image to cover the entire width of its container */
+      height: auto;       /* Maintain aspect ratio */
+      object-fit: cover;  /* Ensures the image fills the container, cropping if necessary */
+      margin: 0;          /* Remove any margin that could prevent full-width */
+    }
+  
+    // Adjust the container itself to take full width
+    .publication__image {
+      width: 100%;       /* Make sure the image container takes the full width */
+      padding: 0;        /* Remove any padding */
+      margin: 0;         /* Remove any margin */
+    }
+  }
+}

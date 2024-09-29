@@ -1,0 +1,31 @@
+{% if site.data.settings.research.enable %}
+<!-- begin research -->
+<section class="section research">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            {% if site.data.settings.research.research_title %}
+              <h2 class="section__title">
+                <a href="{{ site.data.settings.research.research_page_url }}">{{ site.data.settings.research.research_title }}</a>
+              </h2>
+              <a class="section__link" href="{{ '/research' | relative_url }}">Read all <i class="fa-solid fa-arrow-right-long"></i></a>
+            {% else %}
+              <h2 class="section__title">Research</h2>
+            {% endif %}
+          </div>
+          <p class="section__description">{{ site.data.settings.research.research_description }}</p>
+          <div class="research-content">
+              <p>My research interests sit at the intersection of urban studies / planning, immigration, and social movements. My theoretical and methodological approaches are highly interdisciplinary, drawing mostly from urban planning, sociology, and geography. At the most general level, I am interested in how cities incubate the activism of marginalized groups (e.g., undocumented immigrants, low-income workers and renters, LGBTQ communities, working class African American residents, etc.).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end research -->
+{% else %}
+<!-- Debug Information: Research section is disabled -->
+<p>Research section is disabled in settings.</p>
+{% endif %}
