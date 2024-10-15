@@ -151,7 +151,7 @@ videos_settings:
 #-------------------------------
 # Gallery Section
 gallery_settings:
-  enable: false
+  enable: true
   gallery_title: Gallery
   gallery_description:
 

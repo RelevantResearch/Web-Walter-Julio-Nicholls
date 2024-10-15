@@ -260,6 +260,14 @@ table td {
 
   @media (max-width: $mobile) {
     margin-top: 60px;
+
+    .content{
+      margin-left: 0;
+    }
+    .content.shifted {
+      margin-left: 352px; /* Shift to the right to accommodate the sidebar */
+  }
+    
   }
 }
 
