@@ -15,10 +15,20 @@
 
 strong, b {
     color: blue;
+    border-bottom: 1px solid var(--border-color);
 }
 
-b, strong {
-    font-weight: normal;
+strong:hover {
+    border-bottom-color: var(--link-color-hover);
+}
+
+a span {
+    color: blue !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+a span:hover {
+    border-bottom-color: var(--link-color-hover);
 }
 
 .post, .page {
@@ -57,8 +67,100 @@ b, strong {
 }
 @media (max-width: 1024px) {
     .content.with-breadcrumbs {
-        margin-top: 130px !important;
+        margin-top: 60px !important;
         margin-left: 0px !important;
         position: unset !important;
     }
+}
+
+/* Media Query for screens with a max width of 1024px */
+@media (max-width: 1024px) {
+    .post, .page {
+        margin-bottom: 28px;
+    }
+}
+
+/* Additional styles for content with breadcrumbs */
+.content.with-breadcums {
+    margin-top: 100px !important;
+}
+
+.fa-facebook::before {
+    margin-left: 7px;
+    transform: scale(1.5);
+}
+
+/* Twitter Icon */
+.fa-x-twitter::before {
+    margin-left: 7px;
+    transform: scale(1.5);
+}
+
+/* Envelope Icon */
+.fa-envelope::before {
+    margin-left: 7px;
+    transform: scale(1.5);
+}
+
+/* YouTube Icon */
+.fa-youtube::before {
+    margin-left: 7px;
+    transform: scale(1.5);
+}
+
+/* Globe Icon */
+.fa-globe::before {
+    margin-left: 7px;
+    transform: scale(1.5);
+}
+
+
+
+/* Parent menu item styling */
+.nav__item.has-submenu {
+  position: relative;
+}
+
+/* Hidden by default, displayed on hover */
+.sub-nav__list {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the parent menu item */
+  left: 0;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav__item:hover .sub-nav__list {
+  display: block;
+}
+
+/* Submenu link styling */
+.sub-nav__item {
+  padding: 8px 16px;
+}
+
+.sub-nav__link {
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar ul .sub-nav {
+    display: none; /* Hide submenu initially */
+    padding-left: 15px; /* Indent submenu items */
+}
+
+.sidebar ul li:hover .sub-nav {
+    display: block; /* Display submenu on hover */
+}
+
+.sidebar .sub-nav li a {
+    font-size: 0.9em; /* Optional styling for sub-links */
+    color: #555; /* Adjust color if needed */
+}
+.page__content a:hover {
+    color: orange !important; /* Changes the link color to orange on hover */
 }

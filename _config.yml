@@ -43,6 +43,9 @@ collections:
   updates:   
     output: true
     permalink: /updates/:slug 
+  update:   
+    output: true
+    permalink: /update/:slug 
   books:   
     output: true
     permalink: /books/:slug
@@ -105,6 +108,11 @@ defaults:
       path: ""
     values:
       layout: "archieve"
+  - scope:   
+      path: ""
+      type: "update"
+    values:
+      layout: "update"
       
 sass:
   sass_dir: _sass

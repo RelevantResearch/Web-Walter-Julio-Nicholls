@@ -1,14 +1,15 @@
 .book-gallery {
   display: flex;
   flex-direction: column;
-  gap: 29px;
   padding: 1px;
+  gap: 15px;
 }
 
 .book-item {
   display: flex;
   align-items: center;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .book-item.reverse {
@@ -17,7 +18,7 @@
 }
 
 .book-image img {
-  max-width: 200px; 
+  max-width: 100%; 
   height: auto;
   border-radius: 8px;
 }
@@ -38,6 +39,10 @@
   margin: 0;
   font-size: 1rem;
   margin-top: 12px;
+}
+
+a span {
+  color: blue !important;
 }
 
 /* Responsive Design */

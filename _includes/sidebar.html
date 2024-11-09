@@ -5,6 +5,7 @@
 </div>
 
 <!-- Sidebar -->
+<!-- Sidebar -->
 <div class="sidebar">
     <!-- Close Button for Sidebar on Mobile -->
     <span class="close-btn">&times;</span> <!-- Close Button -->
@@ -19,10 +20,24 @@
                 <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %} {% if item.url == '/' %}home-link{% endif %}">
                     {{ item.title }}
                 </a>
+                
+                {% if item.sub_items %}
+                    <!-- Submenu for items with sub-items -->
+                    <ul class="sub-nav">
+                        {% for sub_item in item.sub_items %}
+                            <li>
+                                <a href="{{ sub_item.url }}" class="{% if sub_item.url == page.url %}active{% endif %}">
+                                    {{ sub_item.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </li>
         {% endfor %}
-    </ul
+    </ul>
 
     <!-- Include social links at the bottom of the sidebar -->
     {% include social-links.html %}
 </div>
+

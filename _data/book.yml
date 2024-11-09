@@ -1,0 +1,49 @@
+book1:
+  title: "The Immigrant Rights Movement: The Battle over National Citizenship"
+  description: "This book chronicles the immigrant rights movement in the U.S., from its grassroots beginnings in the 1990s to its rise on the national stage. Initially united over calls for comprehensive immigration reform, activists sought legal recognition for immigrants based on their deep ties to American values. While the Obama era brought unprecedented access and resources, the movement faced internal divisions and limitations in challenging mainstream narratives. Ultimately, this powerful account explores how a transformative movement became entangled within the very system it aimed to change."
+  image: "/images/books.jpg"
+  publisher:
+    name: "Stanford University Press"
+    url: "https://www.sup.org/books/sociology/immigrant-rights-movement"
+  amazon:
+    url: "https://www.amazon.com/Immigrant-Rights-Movement-National-Citizenship/dp/1503609324#:~:text=The%20Immigrant%20Rights%20Movement%20tells,that%20it%20sought%20to%20transform."
+  barnes_and_noble:
+    url: "https://www.barnesandnoble.com/w/limits-to-decolonization-penelope-anthias/1126834846?ean=9781501714368"
+  library:
+    url: "https://search.worldcat.org/title/1198929771"
+
+book2:
+  title: "Cities and Social Movements: Immigrant Rights Activism in the US, France, and the Netherlands, 1970-2015"
+  description: "This book offers a comparative analysis of immigrant rights movements in the U.S., France, and the Netherlands over five decades. Through historical research, it explores how small resistances to restrictive immigration policies sometimes evolve into powerful, lasting mobilizations. This book provides an in-depth look at grassroots efforts, examining how local environments shape and sustain activist networks. Blending theory with vivid case studies, it reveals how geographic and social factors influence the development of movements, appealing to students, scholars, policymakers, and activists alike."
+  image: "/images/boks1.jpg"
+  publisher:
+    name: "Wiley Blackwell"
+    url: "https://www.wiley.com/en-us/Cities+and+Social+Movements%3A+Immigrant+Rights+Activism+in+the+US%2C+France%2C+and+the+Netherlands%2C+1970-2015-p-9781118750667"
+  amazon:
+    url: "https://www.amazon.com/-/he/Walter-J-Nicholls/dp/1118750667"
+  library:
+    url: "https://search.worldcat.org/title/967266575"
+
+book3:
+  title: "The DREAMers: How the Undocumented Youth Movement Transformed the Immigrant Rights Debate"
+  description: "The DREAMers tells the story of undocumented youth activists who reshaped the U.S. immigration debate. Starting with the 2010 Arizona office sit-in of Senator John McCain, the book explores the rise of bold, public actions calling for the DREAM Act and the right to stay in the country. Drawing on interviews and firsthand encounters, Walter Nicholls shows how these young activists claimed their American identity to transform public perception and demand recognition. This powerful account demonstrates how marginalized groups can carve out a strong voice in American politics, advocating for their right to belong."
+  image: "/images/bok3.png"
+  publisher:
+    name: "Stanford University Press"
+    url: "https://www.sup.org/books/sociology/dreamers"
+  amazon:
+    url: "https://www.amazon.com/DREAMers-Undocumented-Movement-Transformed-Immigrant/dp/0804788847"
+  library:
+    url: "https://search.worldcat.org/title/1198930660"
+
+book4:
+  title: "Spaces of Contention: Spatialities and Social Movements"
+  description: "Spaces of Contention explores how social movements use space to influence social and political change. Bringing together leading scholars, this interdisciplinary book examines how activists mobilize within specific places, navigate scale and territory to define collective identities, and build networks that connect resources across regions. Organized into sections on place, scale, and networks, it shows how these spatial dimensions intersect in shaping collective action. This work offers a vital overview of cutting-edge research in Geography, Sociology, and Political Science, making it a key resource for understanding the spatial dynamics of social movements."
+  image: "/images/books3.jpg"
+  publisher:
+    name: "Routledge"
+    url: "https://www.routledge.com/Spaces-of-Contention-Spatialities-and-Social-Movements/Miller-Nicholls/p/book/9781032922263#:~:text=By%20mapping%20state%20of%20the,tactically%20and%20strategically%20approach%20and"
+  amazon:
+    url: "https://www.amazon.com/Spaces-Contention-Spatialities-Social-Movements/dp/0754677788"
+  library:
+    url: "https://search.worldcat.org/title/1452182189"

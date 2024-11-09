@@ -6,82 +6,80 @@ description:
 
 <!-- begin page -->
 <div class="book-gallery container">
-  
-  <!-- Book 1: Image on Left, Description on Right -->
+
+  <!-- Access Book 1 -->
+  <h2>{{ site.data.book.book1.title }}</h2>
   <div class="book-item">
-    <div class="book-image">
-        <img src="/images/books.jpg" alt="The Immigrant Rights Movement" loading="lazy">
-    </div>
     <div class="book-details">
-        <h2>The Immigrant Rights Movement: The Battle over National Citizenship</h2>
-        <p>A compelling narrative about the grassroots origins of the immigrant rights movement in the U.S. and its rise to prominence during the 2016 presidential election.</p>
-        <p>
-            Discover the story of a vibrant movement that challenged the meaning of national citizenship. 
-            <a href="https://www.amazon.com/Immigrant-Rights-Movement-National-Citizenship/dp/1503609324"><b>Get it today</b></a>
-        </p>
-        <p>
-          <strong>Rating:</strong> 
-          <span style="color: gold;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4.7 out of 5 stars -->
-          <strong>4.7</strong>
+      <p>{{ site.data.book.book1.description }}</p>
+      <p>
+        You can purchase the book directly from the publisher, 
+        <a href="{{ site.data.book.book1.publisher.url }}"><span>{{ site.data.book.book1.publisher.name }}</span></a>, 
+        or online at 
+        <a href="{{ site.data.book.book1.amazon.url }}"><span>Amazon</span></a>
+        or if you're in the U.S., you can also borrow it from a 
+        <a href="{{ site.data.book.book1.library.url }}"><span>public library near you</span></a>.
       </p>
+    </div>
+    <div class="book-image">
+      <img src="{{ site.url }}{{ site.data.book.book1.image }}" alt="{{ site.data.book.book1.title }}" loading="lazy">
     </div>
   </div>
 
-
-  
-  <!-- Book 2: Image on Right, Description on Left -->
+  <!-- Access Book 2 -->
+  <h2>{{ site.data.book.book2.title }}</h2>
   <div class="book-item reverse">
-    <div class="book-details">
-        <h2>Cities and Social Movements: Immigrant Rights Activism in the US, France, and the Netherlands, 1970-2015</h2>
-        <p>By Walter J. Nicholls and Justus Uitermark. This book examines how small resistances against restrictive immigration policies develop into large and sustained mobilizations in three countries over five decades.</p>
-        
-        <p>
-            The book presents a bottom-up theory of movements, exploring how geography affects the evolution of social movements. It provides insights for students, scholars, policy makers, and activists.
-            <a href="https://www.example.com/book-link"><b>Get it today</b></a>
-        </p>
-        <p>
-          <strong>Rating:</strong> 
-          <span style="color: gold;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4.0 out of 5 stars -->
-          <strong>4.0</strong>
-      </p>
-    </div>
     <div class="book-image">
-        <img src="/images/boks1.jpg" alt="Cities and Social Movements" loading="lazy">
+      <img src="{{ site.url }}{{ site.data.book.book2.image }}" alt="{{ site.data.book.book2.title }}" loading="lazy">
+    </div>
+    <div class="book-details">
+      <p>{{ site.data.book.book2.description }}</p>
+      <p>
+        You can purchase the book directly from the publisher, 
+        <a href="{{ site.data.book.book2.publisher.url }}"><span>{{ site.data.book.book2.publisher.name }}</span></a>, 
+        or online at 
+        <a href="{{ site.data.book.book2.amazon.url }}"><span>Amazon</span></a> 
+        or if you're in the U.S., you can also borrow it from a 
+        <a href="{{ site.data.book.book2.library.url }}"><span>public library near you</span></a>.
+      </p>
     </div>
   </div>
 
-
-  <!-- Book 3: Image on Left, Description on Right -->
+  <!-- Access Book 3 -->
+  <h2>{{ site.data.book.book3.title }}</h2>
   <div class="book-item">
-    <div class="book-image">
-      <img src="/images/books2.jpg" alt="The Politics of Water" loading="lazy">
-    </div>
     <div class="book-details">
-      <h2>The DREAMers: How the Undocumented Youth Movement Transformed the Immigrant Rights Debate</h2>
-      <p>This book is about the rise of the undocumented youth movement in the U.S. The book highlights a pivotal moment in 2010 when activists occupied Senator McCain's office, marking a shift toward more confrontational activism for the DREAM Act. It shows how these young activists, despite facing anti-immigrant sentiment, assert their rights and challenge political discourse.. <a href="https://example.com/politics-of-water"><b>Get it today</b></a></p>
+      <p>{{ site.data.book.book3.description }}</p>
       <p>
-        <strong>Rating:</strong> 
-        <span style="color: gold;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4.0 out of 5 stars -->
-        <strong>4.0</strong>
+        You can purchase the book directly from the publisher, 
+        <a href="{{ site.data.book.book3.publisher.url }}"><span>{{ site.data.book.book1.publisher.name }}</span></a>, 
+        or online at 
+        <a href="{{ site.data.book.book3.amazon.url }}"><span>Amazon</span></a>
+        or if you're in the U.S., you can also borrow it from a 
+        <a href="{{ site.data.book.book3.library.url }}"><span>public library near you</span></a>.
       </p>
     </div>
+    <div class="book-image">
+      <img src="{{ site.url }}{{ site.data.book.book3.image }}" alt="{{ site.data.book.book3.title }}" loading="lazy">
+    </div>
   </div>
-
-  <!-- Book 4: Image on Right, Description on Left -->
+  <!-- Access Book 4 -->
+  <h2>{{ site.data.book.book4.title }}</h2>
   <div class="book-item reverse">
+    <div class="book-image">
+      <img src="{{ site.url }}{{ site.data.book.book4.image }}" alt="{{ site.data.book.book4.title }}" loading="lazy">
+    </div>
     <div class="book-details">
-      <h2>Spaces of Contention: Spatialities and Social Movements</h2>
-      <p>Spaces of Contention is a book that examines how social movements use spatial practices to respond to and shape changing social and political contexts. It explores different aspects like place, scale, and networks and how they interact in shaping collective action. The book aims to provide readers with a comprehensive guide to innovative research on the spatial constitution of social movements.<a href="https://example.com/indigenous-rights"><b>Get it today</b></a></p>
+      <p>{{ site.data.book.book4.description }}</p>
       <p>
-        <strong>Rating:</strong> 
-        <span style="color: gold;">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4.0 out of 5 stars -->
-        <strong>4.0</strong>
+        You can purchase the book directly from the publisher, 
+        <a href="{{ site.data.book.book4.publisher.url }}"><span>{{ site.data.book.book4.publisher.name }}</span></a>, 
+        or online at 
+        <a href="{{ site.data.book.book4.amazon.url }}"><span>Amazon</span></a> 
+        or if you're in the U.S., you can also borrow it from a 
+        <a href="{{ site.data.book.book4.library.url }}"><span>public library near you</span></a>.
       </p>
     </div>
-    <div class="book-image">
-      <img src="/images/books3.jpg" alt="Indigenous Rights" loading="lazy">
-    </div>
   </div>
-
 </div>
 <!-- end page -->

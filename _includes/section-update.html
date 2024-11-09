@@ -1,8 +1,5 @@
-{% if site.data.settings.update.enable %}
+{% if site.data.settings.updates.enable %}
 <!-- begin updates -->
-{% include lang.html %}
-
-
 <section class="section updates">
   <div class="container">
     <div class="row">
@@ -13,7 +10,7 @@
               <h2 class="section__title">
                 <a href="{{ site.data.settings.updates.updates_page_url }}">{{ site.data.settings.updates.updates_title }}</a>
               </h2>
-              <a class="section__link" href="{{ '/update' | relative_url }}">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+              <a class="section__link" href="{{ '/updates' | relative_url }}"> View all updates <i class="fa-solid fa-arrow-right-long"></i></a>
             {% else %}
               <h2 class="section__title">Updates</h2>
             {% endif %}
@@ -25,34 +22,22 @@
           {% endif %}
         </div>
 
-        <div id="archives" class="pl-xl-3">
-          {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
-          {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
-
-          {% assign last_year = nil %}
-          {% assign limited_posts = site.posts | sort: 'date' | reverse | slice: 0, 5 %}
-          
+        <div class="updates__list">
+          {% if site.data.settings.update_items %}
           <ul>
-            {% for post in limited_posts %}
-              {% assign cur_year = post.date | date: '%Y' %}
-              
-              {% if cur_year != last_year %}
-                <time class="year lead d-block text-center my-4">{{ cur_year }}</time>
-                <ul class="list-unstyled"> 
-                {% assign last_year = cur_year %}
+            {% for update_item in site.data.settings.update_items %}
+            <li>
+              {% if update_item.date %}
+              <p class="update-content"><span class="update-date">{{ update_item.date }}:</span> {{ update_item.content | safe }}</p>
+              {% else %}
+                <p class="update-content"><b>Date not available:</b> {{ update_item.content | safe }}</p>
               {% endif %}
-              
-              <li>
-                {% assign ts = post.date | date: '%s' %}
-                <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
-                <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
-                  {{ post.date | date: df_strftime_m }}
-                </span>
-                <a>{{ post.title }}</a>
-              </li>
-
+            </li>
             {% endfor %}
           </ul>
+          {% else %}
+          <p>No updates available or `update_items` is not set in the data file.</p>
+          {% endif %}
         </div>
       </div>
     </div>

@@ -19,28 +19,35 @@ breadcrumbs:
 
 
 #-------------------------------
-# Navigation Settings
 menu_settings:
   menu_items:
     - title: 'Home'
       url: '/'
-    - title: 'Update'
-      url: '/update/'
-    - title: 'Books'
-      url: '/books/'
+    - title: 'Updates'
+      url: '/updates/'
     - title: 'Research'
       url: '/research/'
+    - title: 'Books'
+      url: '/books/'
     - title: 'Publications'
       url: '/publications/'
-    - title: 'Films'
-      url: '/videos/'
-    #   url: '/elements/'
-    # - title: 'Teaching'
-      # url: '/teaching/'
-    # - title: 'Impact'
-      # url: '/impact/'
-    
-
+      sub_items:
+      - title: "Books"
+        url: "/publications/#books"
+      - title: "Guest Editorships"
+        url: "/publications/#guest-editorships"
+      - title: "Articles"
+        url: "/publications/#articles"
+      - title: "Papers Under Review"
+        url: "/publications/#papers-under-review"
+      - title: "Book Chapters"
+        url: "/publications/#book-chapters"
+      - title: "Commentaries and Encyclopedia Entries"
+        url: "/publications/#commentaries-and-encyclopedia-entries"
+    - title: 'Video Presentation'
+      url: '/video-presentation/'
+    - title: 'Public Engagement'
+      url: '/public-engagement/'
 
 #-------------------------------
 # Author Settings
@@ -57,7 +64,7 @@ author:
 #-------------------------------
 # Settings
 updates:
-  enable: false
+  enable: true
   updates_title: "Latest Updates"
   updates_page_url: "/update"
   updates_description: "Stay informed with the latest events and announcements. Check back monthly for updates."
@@ -135,7 +142,7 @@ testimonial_items:
 #-------------------------------
 # Blog Section
 blog_settings:
-  enable: true
+  enable: false
   blog_title: Writing
   blog_description:
 
@@ -151,7 +158,7 @@ videos_settings:
 #-------------------------------
 # Gallery Section
 gallery_settings:
-  enable: false
+  enable: true
   gallery_title: Gallery
   gallery_description:
 
