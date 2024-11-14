@@ -237,9 +237,6 @@ a span:hover {
     display: block;
 }
 
-.menu-item.has-sub:hover .ri--arrow-down-s-line {
-    transform: rotate(180deg); /* Rotate the arrow 180 degrees */
-}
 
 @media (max-width: 768px) {
     .menu-item.has-sub .sub-nav {
@@ -248,28 +245,6 @@ a span:hover {
     }
 }
 
-.ri--arrow-down-s-line {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z'/%3E%3C/svg%3E");
-    background-color: currentColor;
-    -webkit-mask-image: var(--svg);
-    mask-image: var(--svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-}
-
-
-span.ri--arrow-down-s-line {
-    color: black !important;
-    width: 21px;
-    height: 28px;
-    /* display: flex; */
-    margin-left: 10px;
-}
 
 /* FIlm section */
 .playlist-container {
@@ -376,4 +351,23 @@ span.ri--arrow-down-s-line {
 
 h2.film-section {
     margin: 0;
+}
+
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+}
+
+i.arrow.down {
+    margin-left: 10px;
+}
+
+.menu-item.has-sub:hover .arrow.down {
+    transform: rotate(225deg); /* Rotate the arrow 180 degrees */
 }
