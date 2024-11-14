@@ -14,7 +14,7 @@ page_cover:
 
 - Walter J. Nicholls (2013), [The DREAMers: How the Undocumented Youth Movement Transformed the Immigrant Rights Debate in the United States.](https://www.sup.org/books/sociology/dreamers) *Palo Alto: Stanford University Press.*
 
-- Walter J. Nicholls, Byron Miller, and Justin Beaumont (eds.) (2013), [Spaces of Contention: The Spatialities of Social Movements.](https://www.routledge.com/Spaces-of-Contention-Spatialities-and-Social-Movements/Miller-Nicholls/p/book/9781032922263?srsltid=AfmBOoqx35vzEsHaXguqgm7WRu3O-48F73PSdkud5G4nKsoGxYOGUqzA)* *Aldershot: Ashgate.*
+- Walter J. Nicholls, Byron Miller, and Justin Beaumont (eds.) (2013), [Spaces of Contention: The Spatialities of Social Movements.](https://www.routledge.com/Spaces-of-Contention-Spatialities-and-Social-Movements/Miller-Nicholls/p/book/9781032922263?srsltid=AfmBOoqx35vzEsHaXguqgm7WRu3O-48F73PSdkud5G4nKsoGxYOGUqzA) *Aldershot: Ashgate.*
 
 ## Guest Editorships
 
