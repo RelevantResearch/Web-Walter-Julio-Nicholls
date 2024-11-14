@@ -5,7 +5,6 @@
 </div>
 
 <!-- Sidebar -->
-<!-- Sidebar -->
 <div class="sidebar">
     <!-- Close Button for Sidebar on Mobile -->
     <span class="close-btn">&times;</span> <!-- Close Button -->
@@ -14,15 +13,17 @@
     {% include section-aurthorr.html %}
 
     <!-- Dynamically loading menu items from _data/settings.yml -->
-    <ul>
+    <ul class="menu-container">
         {% for item in site.data.settings.menu_settings.menu_items %}
-            <li>
+            <li class="menu-item {% if item.sub_items %}has-sub{% endif %}">
                 <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %} {% if item.url == '/' %}home-link{% endif %}">
                     {{ item.title }}
+                    {% if item.sub_items %}
+                        <span class="ri--arrow-down-s-line"></span>
+                    {% endif %}
                 </a>
-                
+    
                 {% if item.sub_items %}
-                    <!-- Submenu for items with sub-items -->
                     <ul class="sub-nav">
                         {% for sub_item in item.sub_items %}
                             <li>
@@ -36,8 +37,8 @@
             </li>
         {% endfor %}
     </ul>
+    
 
     <!-- Include social links at the bottom of the sidebar -->
     {% include social-links.html %}
 </div>
-

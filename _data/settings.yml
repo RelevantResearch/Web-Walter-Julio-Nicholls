@@ -88,6 +88,20 @@ update:
   updates_page_url: "/update"
   updates_description: "Stay informed with the latest events and announcements. Check back monthly for updates."
 
+updates-item:
+  - year: 2024
+    events:
+      - date: "2 FEB"
+        content: "My research interests sit at the intersection of urban studies / planning, immigration, and social movements. My theoretical and methodological approaches are highly interdisciplinary, drawing mostly from urban planning, sociology, and geography."
+      - date: "3 FEB"
+        content: "My research interests sit at the intersection of urban studies / planning, immigration, and social movements. My theoretical and methodological approaches are highly interdisciplinary."
+      - date: "2 SEPT"
+        content: "Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me."
+      - date: 
+        content: "Returns to the United States to present work at an art gallery in Los Angeles, marking a major milestone."
+      - date: 
+        content: "Collaborates with a well-known magazine on a special edition, which highlights travel photography."
+
 
 publication:
   enable: true
@@ -110,8 +124,8 @@ projects_settings:
 # about settings
 about_settings:
   enable: false
-  about_title: "About Dr. Penelope Anthias"
-  about_description: "Dr. Penelope Anthias is an Associate Professor of Geography at Durham University. Her research focuses on the intersection of indigeneity, territory, and resource extraction in Latin America, particularly Bolivia. With over 15 years of ethnographic research, she combines anti-colonial, Marxist, and Foucaultian theories with participatory methods. Her acclaimed book, *Limits to Decolonization*, explores Bolivia’s Native Community Lands (TCOs) and she actively mentors PhD students in postcolonial geographies and land politics."
+  about_title: "About Walter julio Nicholls"
+  about_description: 
 
 
 
@@ -183,15 +197,15 @@ mailchimp_settings:
 social:
 - {icon: "fa-brands fa-facebook", name: "Facebook", link: "https://www.facebook.com/profile.php?id=100090929704323"}
 - {icon: "fa-brands fa-x-twitter", name: "Twitter", link: "https://x.com/PenelopeAnthias"}
-# - {icon: "fa-brands fa-instagram", name: "Instagram", link: "https://instagram.com"}
+- {icon: "fa-brands fa-instagram", name: "Instagram", link: "https://www.instagram.com/walternicholls/"}
 # - {icon: "fa-brands fa-tiktok", name: "Tiktok", link: "https://tiktok.com"}
-- {icon: "fa-brands fa-youtube", name: "Youtube", link: "https://www.youtube.com/@penelopeanthias"}
+# - {icon: "fa-brands fa-youtube", name: "Youtube", link: "https://www.youtube.com/@penelopeanthias"}
 # - {icon: "fa-brands fa-pinterest", name: "Pinterest", link: "https://pinterest.com"}
 # - {icon: "fa-brands fa-dribbble", name: "Dribbble", link: "https://dribbble.com"}
 # - {icon: "fa-brands fa-microsoft", name: "Microsoft", link: "https://microsoft.com"}
 # - {icon: "fa-brands fa-vimeo-v", name: "Vimeo", link: "https://vimeo.com"}
-- {icon: "fa-solid fa-envelope", name: "Email", link: "mailto:penelope.f.anthias@durham.ac.uk"}
-- {icon: "fa-solid fa-globe", name: "Website", link: "https://www.durham.ac.uk/staff/penelope-f-anthias/"}
+- {icon: "fa-solid fa-envelope", name: "Email", link: "mailto:wnicholl@uci.edu"}
+- {icon: "fa-solid fa-globe", name: "Website", link: "https://uppp.soceco.uci.edu/"}
 
 # Example of adding a new link to the footer - {icon: "fa-brands fa-dribbble", name: "Dribbble" link: "https://dribbble.com"}
 # Other icons can be found at https://fontawesome.com/search?o=r&m=free

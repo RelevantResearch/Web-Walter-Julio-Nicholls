@@ -85,7 +85,13 @@ a span:hover {
     margin-top: 100px !important;
 }
 
+
 .fa-facebook::before {
+    margin-left: 7px;
+    transform: scale(1.5);
+}
+
+.fa-instagram::before {
     margin-left: 7px;
     transform: scale(1.5);
 }
@@ -154,7 +160,7 @@ a span:hover {
 }
 
 .sidebar ul li:hover .sub-nav {
-    display: block; /* Display submenu on hover */
+    display: none; /* Display submenu on hover */
 }
 
 .sidebar .sub-nav li a {
@@ -163,4 +169,210 @@ a span:hover {
 }
 .page__content a:hover {
     color: orange !important; /* Changes the link color to orange on hover */
+}
+
+/* Style for the main navigation link */
+.nav__link.active {
+    background-color: #f00; /* Red background for active link */
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Submenu styling */
+.sub-nav {
+    display: none; /* Initially hidden */
+    padding: 8px 0;
+    margin-top: 4px;
+    list-style: none;
+}
+
+/* Styling submenu items */
+.sub-nav__item {
+    list-style: none;
+}
+
+.sub-nav__link {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+/* Active submenu link styling */
+.sub-nav__link.active {
+    background-color: #f00; /* Red background for active submenu link */
+    color: white;
+    border-radius: 4px;
+}
+
+
+
+/* Show submenu inline with parent */
+.sub-nav.show {
+    display: block; /* Toggle visibility of submenu */
+}
+
+
+
+.menu-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item .dropdown__arrow {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+
+
+.menu-item.has-sub:hover .sub-nav {
+    display: block;
+}
+
+.menu-item.has-sub:hover .ri--arrow-down-s-line {
+    transform: rotate(180deg); /* Rotate the arrow 180 degrees */
+}
+
+@media (max-width: 768px) {
+    .menu-item.has-sub .sub-nav {
+        display: none;
+        position: static;
+    }
+}
+
+.ri--arrow-down-s-line {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+span.ri--arrow-down-s-line {
+    color: black !important;
+    width: 21px;
+    height: 28px;
+    /* display: flex; */
+    margin-left: 10px;
+}
+
+/* FIlm section */
+.playlist-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 17px;
+}
+
+/* Video Player Section */
+.video-player {
+    width: 100%;
+    max-width: 640px;
+    height: 271px;
+    background-color: #ddd;
+}
+
+/* Video List Section */
+.video-list {
+  width: 100%;
+  max-width: 300px;
+  list-style-type: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.video-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+  border-radius: 11px;
+}
+
+.video-item:hover {
+  background-color: #e0e0e0;
+  padding-left: 15px; /* Adds a little left padding on hover */
+}
+
+.video-item:active {
+  background-color: #d0d0d0;
+}
+
+/* Indicators */
+.playing-indicator, .paused-indicator, .stopped-indicator {
+  font-size: 1.2em;
+  display: none;
+}
+
+.playing-indicator {
+  color: green;
+}
+
+.paused-indicator {
+  color: orange;
+}
+
+.stopped-indicator {
+  color: red;
+}
+
+.video-item.playing .playing-indicator {
+  display: inline;
+}
+
+.video-item.paused .paused-indicator {
+  display: inline;
+}
+
+.video-item.stopped .stopped-indicator {
+  display: inline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .playlist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-player {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .video-list {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+}
+
+h2.film-section {
+    margin: 0;
 }

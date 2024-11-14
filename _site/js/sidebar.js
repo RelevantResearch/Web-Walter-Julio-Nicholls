@@ -13,4 +13,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close button click event
   closeBtn.addEventListener("click", toggleSidebar);
 });
-

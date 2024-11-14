@@ -10,7 +10,7 @@
               <h2 class="section__title">
                 <a href="{{ site.data.settings.updates.updates_page_url }}">{{ site.data.settings.updates.updates_title }}</a>
               </h2>
-              <a class="section__link" href="{{ '/updates' | relative_url }}">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+              <a class="section__link" href="{{ '/updates' | relative_url }}"> View all updates <i class="fa-solid fa-arrow-right-long"></i></a>
             {% else %}
               <h2 class="section__title">Updates</h2>
             {% endif %}
@@ -22,28 +22,30 @@
           {% endif %}
         </div>
 
-        <div class="updates__list">
-          {% if site.data.settings.update_items %}
-          <ul>
-            {% for update_item in site.data.settings.update_items %}
-            <li>
-              {% if update_item.date %}
-                <span class="update-date">{{ update_item.date }}</span>
-              {% else %}
-                <span class="update-date">Date not available</span>
-              {% endif %}
-              {% if update_item.content %}
-                <p class="update-content">{{ update_item.content }}</p>
-              {% else %}
-                <p class="update-content">Content not available</p>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-          {% else %}
-          <p>No updates available or `update_items` is not set in the data file.</p>
-          {% endif %}
+        <div class="timelinee">
+          <div class="timeline-container">
+      
+              <div class="timeline">
+                  {% for update in site.data.settings.updates-item %}
+                      <div class="event">
+                          <div class="year-label">{{ update.year }}</div>
+                          {% for event in update.events %}
+                              <div class="event">
+                                  {% if event.date %}
+                                      <div class="event-date">{{ event.date }}</div>
+                                  {% endif %}
+                                  <div class="event-content">
+                                      {{ event.content }}
+                                  </div>
+                              </div>
+                          {% endfor %}
+                      </div>
+                  {% endfor %}
+              </div>
+          </div>
         </div>
+      
+        
       </div>
     </div>
   </div>
@@ -51,5 +53,5 @@
 <!-- end updates -->
 {% else %}
 <!-- Debug Information: Updates section is disabled or data not available -->
-<!-- <p>Updates section is disabled or there was an issue loading the data.</p> -->
+<p>Updates section is disabled or there was an issue loading the data.</p>
 {% endif %}

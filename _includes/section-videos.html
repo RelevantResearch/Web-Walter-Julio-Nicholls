@@ -16,25 +16,31 @@
             {% endif %}
           </div>
 
-          <div class="row">
-            {% assign sorted = site.videos | sort: 'date' | reverse %}
-            {% for video in sorted limit:2 %}
-            <article class="video col col-6 col-t-12 animate">
-              <div class="video__content">
-                {% if video.image %}
-                <a href="{{ video.url | relative_url }}" class="video__image">
-                  <img class="lazy" data-src="{{ video.image | relative_url }}" alt="{{ video.title }}">
-                </a>
-                {% endif %}
-                <div class="video__info">
-                  <span class="video__icon">
-                    <i class="fa-brands fa-youtube"></i>
-                  </span>
-                  <h3 class="video__title"><a href="{{ video.url | relative_url }}">{{ video.title }}</a></h3>
-                </div>
-              </div>
-            </article>
-            {% endfor %}
+          <div class="playlist-container">
+            <!-- Video Player Section -->
+            <div id="video-player" class="video-player">
+              <iframe id="video-frame" width="100%" height="100%" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          
+            <!-- Video List Section -->
+            <ul class="video-list">
+              <h2 class="film-section">List of Videos</h2>
+              <li class="video-item" onclick="changeVideo(0)">
+                Cities and Social Movements <span class="playing-indicator" id="indicator-0">▶</span>
+                <span class="paused-indicator" id="paused-0">❚❚</span>
+                <span class="stopped-indicator" id="stopped-0">⏹</span>
+              </li>
+              <li class="video-item" onclick="changeVideo(1)">
+                Make the City <span class="playing-indicator" id="indicator-1">▶</span>
+                <span class="paused-indicator" id="paused-1">❚❚</span>
+                <span class="stopped-indicator" id="stopped-1">⏹</span>
+              </li>
+              <li class="video-item" onclick="changeVideo(2)">
+                Civil Rights Movements <span class="playing-indicator" id="indicator-2">▶</span>
+                <span class="paused-indicator" id="paused-2">❚❚</span>
+                <span class="stopped-indicator" id="stopped-2">⏹</span>
+              </li>
+            </ul>
           </div>
 
         </div>

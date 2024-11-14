@@ -131,3 +131,27 @@ $mobile: 1024px; /* Adjust the breakpoint as needed */
         margin-left: 0; /* No margin on mobile */
     }
 }
+
+a.active {
+  color: white; /* Text color inside the active box */
+  background-color: blue; /* Background color for the active link */
+  padding: 8px 12px; /* Space inside the box */
+  border-radius: 4px; /* Optional: Rounded corners */
+  font-weight: bold; /* Optional: Bold text */
+}
+
+
+.dropdown-toggle {
+    margin-left: 131px; /* Adjust spacing between the link and the button */
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sub-nav {
+    display: none; /* Initially hide the submenu */
+    list-style: none;
+    padding-left: 20px; /* Adjust as needed */
+}
+

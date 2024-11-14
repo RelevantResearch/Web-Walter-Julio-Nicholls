@@ -1,33 +1,60 @@
-/* Latest Updates Section Styles */
-.section.updates {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .section.updates .section__title a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .section.updates .section__description {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .updates__content {
-    font-size: 16px;
-  }
-  
-  .updates__content h2 {
-    font-size: 24px;
-  }
-  
-  .updates__content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .updates__content li {
-    margin-bottom: 10px;
-  }
-  
+
+
+.timelinee {
+  display: flex;
+  width: 100%;
+  padding-left: 23px;
+}
+
+.timeline-container {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.timeline-container h3 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.timeline-container p {
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 10px;
+  border-left: 3px solid #4a90e2;
+}
+
+.year-label {
+  background-color: #4a90e2;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  position: absolute;
+  left: -10px;
+  transform: translateX(-100%);
+}
+
+.event {
+  margin: 20px 0;
+  position: relative;
+}
+
+.event-date {
+  display: inline-block;
+  background-color: #eee;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-content {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

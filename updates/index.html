@@ -1,0 +1,26 @@
+---
+layout: page
+---
+
+<div class="timelinee">
+    <div class="timeline-container">
+
+        <div class="timeline">
+            {% for update in site.data.update.updates %}
+                <div class="event">
+                    <div class="year-label">{{ update.year }}</div>
+                    {% for event in update.events %}
+                        <div class="event">
+                            {% if event.date %}
+                                <div class="event-date">{{ event.date }}</div>
+                            {% endif %}
+                            <div class="event-content">
+                                {{ event.content }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
