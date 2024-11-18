@@ -27,10 +27,9 @@
     {% endif %}
 
     
+    {% include breadcrumbs.html %}
 
-    {% if page.url != '/' and site.data.settings.breadcrumbs.enable == true %}
-      {% include breadcrumbs.html %}
-    {% endif %}
+    
 
     <!-- begin content -->
     <main class="content{% if site.data.settings.breadcrumbs.enable == true %} with-breadcrumbs{% endif %}" aria-label="Content">
@@ -46,7 +45,7 @@
   <script src="{{ site.baseurl }}/js/common.js"></script>
   <script src="{{ site.baseurl }}/js/sidebar.js"></script>
   <script src="{{ site.baseurl }}/js/subnav.js"></script>
- 
+  <script src="{{ site.baseurl }}/js/drop.js"></script>
   <script src="{{ site.baseurl }}/js/film.js"></script>
 </body>
 

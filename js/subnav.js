@@ -6,22 +6,21 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener("click", function() {
             // Remove 'active' class from all submenu links
             subNavLinks.forEach(item => item.classList.remove("active"));
-  
+
             // Add 'active' class to the clicked link
             this.classList.add("active");
         });
     });
 
     dropdownToggles.forEach(toggle => {
-        toggle.addEventListener("click", toggleDropdown);
+        toggle.addEventListener("click", function(event) {
+            
+            
+            // Toggle dropdown visibility
+            const dropdownMenu = this.nextElementSibling; // Assuming the dropdown menu is the next sibling
+            if (dropdownMenu) {
+                dropdownMenu.classList.toggle("show");
+            }
+        });
     });
-
-    function toggleDropdown(event) {
-        event.preventDefault(); // Prevent any default action
-
-        // Toggle the display of the next sibling element (submenu)
-        const subNav = event.target.nextElementSibling;
-        subNav.style.display = subNav.style.display === 'block' ? 'none' : 'block';
-    }
-    
 });

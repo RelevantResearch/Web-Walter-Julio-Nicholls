@@ -1,21 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuItems = document.querySelectorAll('.menu-item.has-sub');
+// Add event listener to menu items with submenus
+document.querySelectorAll('.menu-item.has-sub > a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        // Prevent the default link behavior
+        e.preventDefault();
 
-    menuItems.forEach(item => {
-        item.addEventListener('click', function (e) {
-            // Only toggle sub-menu on smaller screens
-            if (window.innerWidth <= 768) {
-                const subNav = item.querySelector('.sub-nav');
-                const isVisible = subNav.style.display === 'block';
-                
-                // Hide all submenus first
-                document.querySelectorAll('.sub-nav').forEach(nav => nav.style.display = 'none');
+        // Find the submenu associated with the clicked item
+        const submenu = this.nextElementSibling; // This assumes the submenu is a sibling to the <a> tag
 
-                // Toggle the clicked one
-                subNav.style.display = isVisible ? 'none' : 'block';
+        // Toggle the 'show' class to open or close the submenu
+        submenu.classList.toggle('show');
 
-                // Prevent the parent link from navigating
-                e.preventDefault();
+        // Optionally, close other submenus when one is opened
+        document.querySelectorAll('.menu-item.has-sub .sub-nav').forEach(function(otherSubmenu) {
+            if (otherSubmenu !== submenu) {
+                otherSubmenu.classList.remove('show');
             }
         });
     });
