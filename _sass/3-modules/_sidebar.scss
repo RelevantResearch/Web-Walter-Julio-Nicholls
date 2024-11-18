@@ -61,7 +61,7 @@ $mobile: 1024px; /* Adjust the breakpoint as needed */
     }
 
     @media (max-width: $mobile) {
-        top: 60px; /* Push down below the mobile header */
+        top: 57px; /* Push down below the mobile header */
         height: calc(100% - 60px); /* Adjust height to fit below the mobile header */
         transform: translateX(-100%); /* Sidebar hidden by default */
 
