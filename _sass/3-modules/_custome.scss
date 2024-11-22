@@ -169,7 +169,7 @@ a span:hover {
     color: #555; /* Adjust color if needed */
 }
 .page__content a:hover {
-    color: orange !important; /* Changes the link color to orange on hover */
+    color: blue !important; /* Changes the link color to orange on hover */
 }
 
 /* Style for the main navigation link */
@@ -179,6 +179,10 @@ a span:hover {
     padding: 6px 10px;
     border-radius: 4px;
     font-weight: bold;
+}
+
+.articles-content {
+  margin-top: 14px;
 }
 
 /* Submenu styling */
@@ -347,6 +351,10 @@ a span:hover {
     width: 100%;
     max-width: 100%;
     max-height: none;
+  }
+  .col {
+    padding-left: 9px;
+    padding-right: 0;
   }
 }
 
