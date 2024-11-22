@@ -7,10 +7,10 @@
         <div class="section__info">
           <div class="section__head">
             {% if site.data.settings.updates.updates_title %}
-              <h2 class="section__title">
-                <a href="{{ site.data.settings.updates.updates_page_url }}">{{ site.data.settings.updates.updates_title }}</a>
-              </h2>
-              <a class="section__link" href="{{ '/updates' | relative_url }}"> View all updates <i class="fa-solid fa-arrow-right-long"></i></a>
+            <h2 class="section__title">
+              <i class="fa-duotone fa-solid fa-file-pen"></i> {{ site.data.settings.updates.updates_title }}
+            </h2>
+            <a class="section__link" href="{{ '/updates' | relative_url }}"> View all updates <i class="fa-solid fa-arrow-right-long"></i></a>
             {% else %}
               <h2 class="section__title">Updates</h2>
             {% endif %}

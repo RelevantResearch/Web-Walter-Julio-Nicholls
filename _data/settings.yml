@@ -32,8 +32,6 @@ menu_settings:
     - title: 'Publications'
       url: '/publications/'
       sub_items:
-      - title: "Books"
-        url: "/publications/#books"
       - title: "Guest Editorships"
         url: "/publications/#guest-editorships"
       - title: "Articles"
@@ -44,8 +42,8 @@ menu_settings:
         url: "/publications/#book-chapters"
       - title: "Commentaries and Encyclopedia Entries"
         url: "/publications/#commentaries-and-encyclopedia-entries"
-    - title: 'Video Presentation'
-      url: '/video-presentation/'
+    - title: 'Public Talks'
+      url: '/public-talks/'
 
 #-------------------------------
 # Author Settings
@@ -64,7 +62,7 @@ author:
 updates:
   enable: true
   updates_title: "Latest Updates"
-  updates_page_url: "/update"
+  updates_page_url: 
   updates_description: "Stay informed with the latest events and announcements. Check back monthly for updates."
 
 update_items:
@@ -83,29 +81,29 @@ research:
 update:
   enable: true
   updates_title: "Latest Updates"
-  updates_page_url: "/update"
+  updates_page_url: "/updates"
   updates_description: "Stay informed with the latest events and announcements. Check back monthly for updates."
 
 updates-item:
   - year: 2024
     events:
       - date: "2 FEB"
-        content: "My research interests sit at the intersection of urban studies / planning, immigration, and social movements. My theoretical and methodological approaches are highly interdisciplinary, drawing mostly from urban planning, sociology, and geography."
+        content: "Add Announcement here."
       - date: "3 FEB"
-        content: "My research interests sit at the intersection of urban studies / planning, immigration, and social movements. My theoretical and methodological approaches are highly interdisciplinary."
+        content: "Add Announcement here."
       - date: "2 SEPT"
-        content: "Started from University of Pennsylvania. This is an important stage of my career. Here I worked in the local magazine. The experience greatly affected me."
+        content: "Add Announcement here."
       - date: 
-        content: "Returns to the United States to present work at an art gallery in Los Angeles, marking a major milestone."
+        content: "Add Announcement here."
       - date: 
-        content: "Collaborates with a well-known magazine on a special edition, which highlights travel photography."
+        content: "Add Announcement here."
 
 
 publication:
   enable: true
   publication_title: "Books" # Change or leave it empty if you want the title to be set elsewhere
   publication_description: 
-  publication_page_url: "/publications" # The URL where all publications are listed
+  publication_page_url:  # The URL where all publications are listed
   publication_image_url: "/images/books.jpg" # The image URL for the book or publication
   publication_author:  # The name of the author
   publication_content: "A compelling narrative about the grassroots origins of the immigrant rights movement in the U.S. and its rise to prominence during the 2016 presidential election. <a href=\"https://www.amazon.com/Immigrant-Rights-Movement-National-Citizenship/dp/1503609324\"><b>Get it today!</b></a>"
@@ -121,9 +119,9 @@ projects_settings:
 #-------------------------------
 # about settings
 about_settings:
-  enable: false
-  about_title: "About Walter julio Nicholls"
-  about_description: 
+  enable: true
+  about_title: "About Walter"
+  about_description: "I am Dr. Walter Nicholls, Associate Professor of Urban Planning and Public Policy at the University of California, Irvine. My research centers on the role of cities in social movements and how immigrants develop political agency in hostile environments. I teach courses in urban sociology, immigration studies, and qualitative methods, with a focus on understanding the dynamics of cities, social change, and immigrant rights. My work seeks to inspire both academic inquiry and real-world action on these critical issues."
 
 
 
@@ -163,14 +161,14 @@ blog_settings:
 # Videos Settings
 videos_settings:
   enable: true
-  videos_title: Films
+  videos_title: Public Talks
   videos_description:
 
 
 #-------------------------------
 # Gallery Section
 gallery_settings:
-  enable: true
+  enable: false
   gallery_title: Gallery
   gallery_description:
 
@@ -203,7 +201,7 @@ social:
 # - {icon: "fa-brands fa-microsoft", name: "Microsoft", link: "https://microsoft.com"}
 # - {icon: "fa-brands fa-vimeo-v", name: "Vimeo", link: "https://vimeo.com"}
 - {icon: "fa-solid fa-envelope", name: "Email", link: "mailto:wnicholl@uci.edu"}
-- {icon: "fa-solid fa-globe", name: "Website", link: "https://uppp.soceco.uci.edu/"}
+- {icon: "fa-solid fa-globe", name: "Website", link: "https://faculty.sites.uci.edu/nicholls/"}
 
 # Example of adding a new link to the footer - {icon: "fa-brands fa-dribbble", name: "Dribbble" link: "https://dribbble.com"}
 # Other icons can be found at https://fontawesome.com/search?o=r&m=free

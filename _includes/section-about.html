@@ -12,13 +12,17 @@
               </h2>
             </div>
             {% if site.data.settings.about_settings.about_description %}
-              <p class="section__description">
+            <div class="research-content">
+              <p>
                 {{ site.data.settings.about_settings.about_description }}
               </p>
+            </div>
+              
             {% else %}
               <p class="section__description">No description provided.</p>
             {% endif %}
           </div>
+          
         </div>
       </div>
     </div>

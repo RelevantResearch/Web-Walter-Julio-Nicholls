@@ -1,7 +1,5 @@
 /* Styles for the About Section */
-.section.about {
-    padding: 60px 0;
-  }
+
   
   .section.about .section__title {
     font-size: 2rem;
@@ -22,7 +20,7 @@
   
   @media (max-width: 768px) {
     .section.about {
-      padding: 40px 0;
+      padding-bottom: 10px;
     }
   
     .section.about .section__title {
@@ -31,6 +29,9 @@
   
     .section.about .section__description {
       font-size: 1rem;
+    }
+    .section.videos {
+      margin-bottom: 27px;
     }
   }
   
