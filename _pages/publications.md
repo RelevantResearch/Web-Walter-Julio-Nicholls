@@ -7,18 +7,6 @@ page_cover:
 ---
 
 
-## Books
-
-- Nicholls, W. (2019). [*The Immigrant Rights Movement: The Battle over National Citizenship*](https://www.sup.org/books/sociology/immigrant-rights-movement). Redwood City: Stanford University Press.
-
-- Nicholls, W., & Uitermark, J. (2016). [*Cities and Social Movements: Immigrant Rights Activism in the United States, France and the Netherlands, 1970-2015*](https://www.wiley.com/en-us/Cities+and+Social+Movements%3A+Immigrant+Rights+Activism+in+the+US%2C+France%2C+and+the+Netherlands%2C+1970-2015-p-9781118750667). Oxford: Wiley-Blackwell, Studies in Urban and Social Change series
-
-- Nicholls, W. (2013). [*The DREAMers: How the Undocumented Youth Movement Transformed the Immigrant Rights Debate in the United States.*](https://www.sup.org/books/sociology/dreamers). Palo Alto: Stanford University Press.
-
-- Nicholls, W., Miller, B., & Beaumont, J. (Eds.). (2013). [*Spaces of Contention: The Spatialities of Social Movements*](https://www.routledge.com/Spaces-of-Contention-Spatialities-and-Social-Movements/Miller-Nicholls/p/book/9781032922263?srsltid=AfmBOoqx35vzEsHaXguqgm7WRu3O-48F73PSdkud5G4nKsoGxYOGUqzA). Aldershot: Ashgate.
-
-
-
 ## Guest Editorships
 
 - Thomas Swerts and Walter J. Nicholls (2021). [Undocumented Immigrant Activism and the Political.](https://onlinelibrary.wiley.com/doi/10.1111/anti.12678) *Antipode.*
