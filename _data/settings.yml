@@ -24,7 +24,7 @@ menu_settings:
     - title: 'Home'
       url: '/'
     - title: 'Updates'
-      url: '/updates/'
+      url: '/updates'
     - title: 'Research'
       url: '/research/'
     - title: 'Books'
