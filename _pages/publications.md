@@ -117,7 +117,7 @@ You can access these articles through my Google Scholar site: [Link.](https://sc
 - Nicholls, Walter J. (2003). [Forging a ‘New’ Organizational Infrastructure for Los Angeles’s Progressive Community.](https://www.researchgate.net/publication/4990934_Forging_a_'new'_organizational_infrastructure_for_Los_Angeles'_progressive_community) *International Journal of Urban and Regional Research*, 27(4), 881-96.
 
 ### Papers Under Review
-#papers-under-review
+
 - Nicholls, Walter J. [Citizenship Contests through the Municipal Bureaucracy: A Case Study of a Sanctuary City Campaign in Mayville, California.](https://onlinelibrary.wiley.com/doi/10.1111/1468-2427.13275)
 
 - Nicholls, Walter J., & Baran, Ian. [Municipal Bureaucrats as Insurgent Political Subjects: A Theoretical Framework.](https://onlinelibrary.wiley.com/doi/10.1111/anti.13072?af=R)

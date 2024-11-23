@@ -123,132 +123,22 @@ a span:hover {
 
 
 
-/* Parent menu item styling */
-.nav__item.has-submenu {
-  position: relative;
-}
 
-/* Hidden by default, displayed on hover */
-.sub-nav__list {
-  display: none;
-  position: absolute;
-  top: 100%; /* Position below the parent menu item */
-  left: 0;
-  background-color: #fff;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.nav__item:hover .sub-nav__list {
-  display: block;
-}
 
-/* Submenu link styling */
-.sub-nav__item {
-  padding: 8px 16px;
-}
 
-.sub-nav__link {
-  color: #333;
-  text-decoration: none;
-}
 
-.sidebar ul .sub-nav {
-    display: none; /* Hide submenu initially */
-    padding-left: 15px; /* Indent submenu items */
-}
-
-.sidebar ul li:hover .sub-nav {
-    display: none; /* Display submenu on hover */
-}
-
-.sidebar .sub-nav li a {
-    font-size: 0.9em; /* Optional styling for sub-links */
-    color: #555; /* Adjust color if needed */
-}
 .page__content a:hover {
-    color: blue !important; /* Changes the link color to orange on hover */
+  color: blue !important; /* Change link color to blue on hover */
 }
 
-/* Style for the main navigation link */
-.nav__link.active {
-    background-color: #f00; /* Red background for active link */
-    color: white;
-    padding: 6px 10px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
+/* Articles content margin */
 .articles-content {
   margin-top: 14px;
 }
 
-/* Submenu styling */
-.sub-nav {
-    display: none; /* Initially hidden */
-    padding: 8px 0;
-    margin-top: 4px;
-    list-style: none;
-}
-
-/* Styling submenu items */
-.sub-nav__item {
-    list-style: none;
-}
-
-.sub-nav__link {
-    color: #333;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: block;
-}
-
-/* Active submenu link styling */
-.sub-nav__link.active {
-    background-color: #f00; /* Red background for active submenu link */
-    color: white;
-    border-radius: 4px;
-}
 
 
-
-/* Show submenu inline with parent */
-.sub-nav.show {
-    display: block; /* Toggle visibility of submenu */
-}
-
-
-
-.menu-container {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu-item {
-    position: relative;
-}
-
-.menu-item .dropdown__arrow {
-    margin-left: 5px;
-    font-size: 0.8em;
-}
-
-
-
-.menu-item.has-sub:hover .sub-nav {
-    display: block;
-}
-
-
-@media (max-width: 768px) {
-    .menu-item.has-sub .sub-nav {
-        display: none;
-        position: static;
-    }
-}
 
 
 /* FIlm section */
@@ -377,10 +267,83 @@ i.arrow.down {
     margin-left: 10px;
 }
 
-.menu-item.has-sub:hover .arrow.down {
-    transform: rotate(225deg); /* Rotate the arrow 180 degrees */
+.menu-item.has-sub .arrow.down {
+  transition: transform 0.3s ease; /* Smooth rotation transition */
 }
+
+.menu-item.has-sub.open .arrow.down {
+  transform: rotate(225deg); /* Rotate the arrow when parent has "open" class */
+}
+
 
 h2#how-do-undocumented-immigrant-activists-challenge-the-status-quo, h2#city-and-social-movenents, h2#reclaiming-the-legacies-of-the-civil-rights-movement {
   margin-bottom: 15px;
+}
+
+/* Parent menu item styling */
+.nav__item.has-submenu {
+  position: relative;
+}
+
+/* Initially hide all submenus */
+.sub-nav {
+  display: none;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Show submenu when the parent has the "open" class */
+.menu-item.has-sub.open .sub-nav {
+  display: block;
+}
+
+/* Styling for submenu items */
+.sub-nav li {
+  padding: 8px 16px;
+}
+
+/* Styling for submenu links */
+.sub-nav a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+/* Submenu hover effect */
+.sub-nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Active submenu link styling */
+.sub-nav a.active {
+  background-color: #ffd200; /* Highlight active submenu link */
+
+  border-radius: 4px;
+}
+
+/* Active main navigation link styling */
+.nav__link.active {
+  background-color: #ffd200; /* Highlight active main menu link */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Prevent hover from showing submenu */
+.nav__item:hover .sub-nav {
+  display: none;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .sub-nav {
+    position: static;
+  }
 }

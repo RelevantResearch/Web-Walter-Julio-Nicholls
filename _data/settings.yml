@@ -106,7 +106,7 @@ publication:
   publication_page_url:  # The URL where all publications are listed
   publication_image_url: "/images/books.jpg" # The image URL for the book or publication
   publication_author:  # The name of the author
-  publication_content: "A compelling narrative about the grassroots origins of the immigrant rights movement in the U.S. and its rise to prominence during the 2016 presidential election. <a href=\"https://www.amazon.com/Immigrant-Rights-Movement-National-Citizenship/dp/1503609324\"><b>Get it today!</b></a>"
+  publication_content: "This book traces the immigrant rights movement in the U.S., from its grassroots beginnings in the 1990s to its national prominence, especially during the 2016 election. Initially united around calls for comprehensive immigration reform, activists sought legal recognition for immigrants based on their ties to American values. Despite significant progress during the Obama era, the movement faced internal divisions and challenges in confronting mainstream narratives, ultimately becoming entangled within the system it aimed to change. <a href=\"https://www.amazon.com/Immigrant-Rights-Movement-National-Citizenship/dp/1503609324\"><b>Get it today!</b></a>"
 
 #-------------------------------
 # Projects Settings
