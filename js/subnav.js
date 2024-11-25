@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navItems = document.querySelectorAll(".menu-item.has-sub"); // Parent items with submenus
     const subNavLinks = document.querySelectorAll(".sub-nav a"); // Submenu links
     const sections = document.querySelectorAll('.page__content h2, .page__content h3'); // Sections on the page
+    const sidebar = document.querySelector(".sidebar"); // Sidebar element
 
     // Toggle submenu on click
     navItems.forEach(item => {
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Highlight submenu link on click (without navigating)
+    // Highlight submenu link on click and close sidebar
     subNavLinks.forEach(link => {
         link.addEventListener("click", (e) => {
             // Prevent page redirection
@@ -33,7 +34,12 @@ document.addEventListener("DOMContentLoaded", () => {
             // Add active class to clicked submenu link
             link.classList.add("active");
 
-            // Optionally, you can manually redirect after marking the active link (if you need it to navigate)
+            // Close the sidebar
+            if (sidebar.classList.contains("open")) {
+                sidebar.classList.remove("open");
+            }
+
+            // Optionally, manually redirect after marking the active link
             window.location.href = link.getAttribute("href");
         });
     });
