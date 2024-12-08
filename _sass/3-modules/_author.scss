@@ -1,13 +1,15 @@
 /* Author */
 .author {
   position: relative;
-  margin-left: -34px; /* Align with the sidebar on larger screens */
-  transition: margin-left 0.3s ease; /* Smooth transition for mobile */
+  margin-left: -34px;
+  transition: margin-left 0.3s ease;
 
-  @media (max-width: 1024px) {
-    margin-left: 0; /* Reset margin on mobile screens */
+  @media (max-width: $mobile) {
+    margin-left: 0;
+    padding: 16px;
   }
 }
+
 
 .author__box {
   margin-top: -45px;
@@ -17,17 +19,12 @@
   }
 
   @media (max-width: $mobile) {
-    margin-top: 32px;
+    margin-top: 0;
+    padding-top: 16px;
   }
 }
 
-.author__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
+
 
 .author__meta {
   margin-right: 8px;
@@ -42,7 +39,6 @@
   border: 4px solid var(--background-color);
   border-radius: 50%;
   overflow: hidden;
-  transform: translate(0);
   background: var(--background-alt-color);
 
   img {
@@ -53,8 +49,9 @@
     height: 100%;
     object-fit: contain;
     user-select: none;
-    transform: scale(1.49);
+    transform: none;
     transition: $global-transition;
+    transform: scale(1.49);
 
     &:hover {
       opacity: 0.9;
@@ -123,5 +120,18 @@
 
   @media (max-width: $mobile) {
     font-size: 15px;
+  }
+}
+.author__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
   }
 }
