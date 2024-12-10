@@ -25,9 +25,6 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /projects/:slug
   videos:
     output: true
     permalink: /videos/:slug
@@ -49,9 +46,7 @@ collections:
   books:   
     output: true
     permalink: /books/:slug
-  archieve:   
-    output: true
-    permalink: /archieve/:slug
+
 
 # Pages Path
 defaults:
@@ -69,11 +64,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
   - scope:
       path: ""
       type: "videos"
@@ -104,10 +94,6 @@ defaults:
       type: "books"
     values:
       layout: "books"
-  - scope:
-      path: ""
-    values:
-      layout: "archieve"
   - scope:   
       path: ""
       type: "update"

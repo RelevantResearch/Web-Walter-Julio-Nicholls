@@ -1,115 +1,37 @@
-# Penelope Anthias
 
-Website for Penelope Anthias.
-To update any section of the page, simply navigate to the "Posts" section and select the specific area you'd like to modify.
-
-## Theme
-
-Use Priam theme (see Slack for link to download). We should be able to plug and play with little modification.
-
-## Website Structure
-
-```
-|-- home (one feature photo at top)
-    |-- Latest updates (This section we will update monthly with upcoming events and recent announcements using bullet points)
-    |-- My research (This section is just text, maybe ~400 words and 3 short paragraphs)
-    |-- Book (feature one book, link to books page)
-    |-- Films (Two films)
-    |-- Publications (This section is a simple text block with the 4-5 most recent publications listed there, and users can click through to see all publications.)
-|-- Research  
-    |-- Reproduce the same text, links, and paragraphs on her faculty page here.
-|-- Publications (simple text page)
-    |-- academic articles
-    |-- books
-    |-- public articles
-    |-- other media
-|-- Films
-    |-- include two films both on youtube, add description
-|-- Updates 
-    (list of updates, announcements, and events by year and month)
-|-- teaching 
-    (do be determined)
-|-- impact 
-    (do be determined)
-
-```
-
-## Domain
-
-I purchased penelopeanthias.com and gave Riwaj manager access.
-
-## Current Websites
-
-Faculty page: https://www.durham.ac.uk/staff/penelope-f-anthias/
-Her personal website (unfinished): https://panthias9.wordpress.com/
+## Overview
+This website, created for **Dr. Walter Nicholls**, serves as a digital portfolio to showcase his academic work, research, and publications. It uses a modified version of the **Priam** theme for Jekyll. The website highlights Dr. Nicholls' contributions to urban studies, immigration, and social movements.
 
 
-# Priam – Minimalistic Portfolio Theme for Jekyll
 
-Unlock the potential of your creative prowess with Priam, a stunning and innovative portfolio theme for Jekyll. Whether you're an artist, designer, developer, or any professional looking to showcase your skills and accomplishments, this theme provides the perfect canvas for your online presence.
+## About Dr. Walter Nicholls
+**Dr. Walter Nicholls** is an Associate Professor of Urban Planning and Public Policy at the University of California, Irvine. His research explores the intersection of urban studies, immigration, and social movements. Specifically, Dr. Nicholls investigates how cities incubate activism, the role of local governments in managing contentious activism, and how stigmatized groups, such as undocumented immigrants, create legitimate political voices.
 
-* * *
+His work on the immigrant rights movement, urban activism, and political change contributes to both academic inquiry and real-world impact, inspiring action on critical social issues.
 
-### Demo
+## About Relevant Research
+At **Relevant Research**, we believe that the public communication of rigorous research can shape a better future. Every academic’s work deserves to reach its full potential, and we provide the tools and strategies to make that happen. With our personalized support, partner scholars can focus on developing and advancing their research, while we handle the technical and logistical challenges that have become common in contemporary academia. Our commitment is to amplify the impact of research, helping academics connect with wider audiences and contribute meaningfully to their fields.
 
-Check the theme in action [Live Demo](https://priam-jekyll.netlify.app/) |
-[Artem Sheludko](https://jekyllthemes.io/developers/artem-sheludko)
+## Theme Acknowledgment
+This website uses a customized version of the **Priam** theme for Jekyll, originally developed by [Artem Sheludko](https://jekyllthemes.io/developers/artem-sheludko). **Bishal Timsina** modified the theme to meet the specific needs of Dr. Walter Nicholls' academic portfolio.
 
-* * *
+**Live Demo**: [Priam Demo](https://priam-jekyll.netlify.app/)
 
-### Theme features
+## Getting Started
+1. **Dependencies**: Ensure you have Jekyll installed by following [Jekyll's installation guide](https://jekyllrb.com/docs/installation/).
+2. **Setup**:
+   - Clone this repository.
+   - Run `bundle install` to install dependencies.
+   - Use `jekyll serve` to preview locally.
+3. **Deployment**: The site can be deployed on any Jekyll-compatible hosting provider. Ensure the domain **walternicholls.com** is correctly configured for deployment.
 
-- Works with GitHub Pages (host it for free)
-- Dark and light mode
-- No jQuery, only vanilla JS
-- 100% responsive Design
-- Clean Code
-- Optimized for mobile devices
-- Section Blog
-- Section Projects
-- Section Gallery
-- Section Testimonials
-- Super fast performance ⚡⚡⚡
-- Social sharing buttons
-- Syntax highlighting
-- Compatible with modern browsers
-- Medium style image zoom
-- Image Lazy loading
-- Image gallery
-- Tags Page
-- Supports Video Posts
-- Supports contact form (Formspree)
-- Supports MailChimp newsletter
-- Supports Disqus comments
-- Supports Google Analytics
-- Font Awesome icons
-- Free Google Fonts
-- Free Updates & Support
 
-* * *
+## Domain and Current Links
+- **Domain**: [walter.relevant-researchtest.com](https://walter.relevant-researchtest.com/)
+- **Faculty Page**: [University of California, Irvine](https://www.faculty.uci.edu/profile.cfm?faculty_id=6214)
 
-### Installation
-
-#### Installing Ruby & Jekyll
-
-If this is your first time using Jekyll, please follow the [Jekyll docs](https://jekyllrb.com/docs/installation/) and make sure your local environment (including Ruby) is setup correctly.
-
-* * *
-
-### Deployment
-
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
-
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
-
-* * *
-
-### Documentation
-
-Before using the Priam theme, please read the attached documentation.
-
-* * *
-
-### Support
-
-<p>If you have any questions or feedback about the theme, please feel free to contact me by mail <a href="mailto:hi.artemsheludko@gmail.com">Contact</a><p>
+## Contact
+For inquiries or feedback, you can reach out to the following:
+- **Email**: walternicholls@uci.edu
+- **Theme Developer**: Bishal Timsina – timsinabishal232@gmail.com
+- **Website Developer**: [Relevant Research (RR)](https://relevant-research.com/)

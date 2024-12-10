@@ -305,7 +305,7 @@ h2#how-do-undocumented-immigrant-activists-challenge-the-status-quo, h2#city-and
 
 /* Styling for submenu items */
 .sub-nav li {
-  padding: 8px 16px;
+  margin-left: 11px;
 }
 
 /* Styling for submenu links */
@@ -331,15 +331,37 @@ h2#how-do-undocumented-immigrant-activists-challenge-the-status-quo, h2#city-and
 .nav__link.active {
   background-color: #ffd200; /* Highlight active main menu link */
   color: white;
-  padding: 6px 10px;
+  padding: 6px 3px;
   border-radius: 4px;
   font-weight: bold;
 }
 
 /* Prevent hover from showing submenu */
-.nav__item:hover .sub-nav {
-  display: none;
+/* Hover effect for main menu links */
+.menu-item a:hover {
+  background-color: #ffd200; /* Highlight active main menu link */
+  color: white;
+  padding: 6px 3px;
+  border-radius: 4px;
+  font-weight: bold;
 }
+
+/* Hover effect for sub-nav links */
+.sub-nav a:hover {
+  background-color: #ffd200; /* Highlight active main menu link */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+
+
+.sub-nav ul:hover {
+  color: #ffd200;
+  background-color: #333; /* or any background color you prefer */
+}
+
 
 /* For responsive design */
 @media (max-width: 768px) {
