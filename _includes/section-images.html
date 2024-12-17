@@ -1,0 +1,46 @@
+<section class="section images">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            {% if site.data.settings.images.images_title %}
+              <h2 class="section__title">
+                <i class="fa-solid fa-image"></i> {{ site.data.settings.images.images_title }}
+              </h2>
+              <a class="section__link" href="{{ '/images' | relative_url }}">View all <i class="fa-solid fa-arrow-right-long"></i></a>
+            {% else %}
+              <h2 class="section__title">Research</h2>
+            {% endif %}
+          </div>
+          <p class="section__description">{{ site.data.settings.images.images_description }}</p>
+          
+          <div class="hai">
+            <div id="slider">
+              <div id="app">
+                {% assign images_to_show = site.data.image.images | slice: 0, 6 %}
+                {% for image in images_to_show %}
+                  <div class="image">
+                    <img src="{{ image.src }}" alt="{{ image.alt }}">
+                  </div>
+                {% endfor %}
+              </div>
+              <button id="nextButton">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                </svg>
+              </button>
+            </div>
+  
+            <!-- Pagination -->
+            <div class="pagination">
+              <ul id="paginationDots">
+                <!-- Pagination dots will be generated dynamically -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+---
+layout: page
+---
+
+<div class="image-row">
+  {% for image in site.data.image.images %}
+    <div class="image-column">
+        <div class="img-hover-zoom">
+            <img src="{{ image.src }}" alt="{{ image.alt }}">
+        </div>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Modal for image lightbox -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  
+  <!-- Previous Button -->
+  <button class="prev" onclick="changeImage(-1)">
+    <!-- Left Arrow SVG -->
+    <svg width="24" height="24" viewBox="0 0 24 24">
+      <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+    </svg>
+  </button>
+  
+  <!-- Image Modal Content -->
+  <img id="modalImage" class="modal-content" />
+  
+  <!-- Next Button -->
+  <button class="next" onclick="changeImage(1)">
+    <!-- Right Arrow SVG -->
+    <svg width="24" height="24" viewBox="0 0 24 24">
+      <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+    </svg>
+  </button>
+</div>

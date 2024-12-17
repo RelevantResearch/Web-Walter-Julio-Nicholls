@@ -336,25 +336,6 @@ h2#how-do-undocumented-immigrant-activists-challenge-the-status-quo, h2#city-and
   font-weight: bold;
 }
 
-/* Prevent hover from showing submenu */
-/* Hover effect for main menu links */
-.menu-item a:hover {
-  background-color: #ffd200; /* Highlight active main menu link */
-  color: white;
-  padding: 6px 3px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-/* Hover effect for sub-nav links */
-.sub-nav a:hover {
-  background-color: #ffd200; /* Highlight active main menu link */
-  color: white;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
 
 
 .sub-nav ul:hover {
@@ -367,5 +348,38 @@ h2#how-do-undocumented-immigrant-activists-challenge-the-status-quo, h2#city-and
 @media (max-width: 768px) {
   .sub-nav {
     position: static;
+  }
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 58vh; /* Sets the height proportional to viewport height */
+  overflow: hidden; /* Ensures no content spills outside */
+  border-radius: 15px; /* Rounded corners */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* Optional: Removes iframe borders */
+  border-radius: 15px; /* Ensures iframe corners match container */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .video-container {
+      padding-bottom: 56.25%; /* Standard 16:9 Aspect Ratio */
+      height: 0; /* Allows the padding-bottom trick to determine height */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+      padding-bottom: 75%; /* Adjust height for smaller mobile screens */
   }
 }

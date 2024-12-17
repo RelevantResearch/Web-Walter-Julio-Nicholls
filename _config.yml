@@ -12,8 +12,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-paginate: 4
-paginate_path: "/blog/page/:num"
+paginate: 5  # Number of items per page
+paginate_path: "/images/page:num/"
 
 
 #-------------------------------
@@ -99,6 +99,10 @@ defaults:
       type: "update"
     values:
       layout: "update"
+
+include:
+  - images
+
       
 sass:
   sass_dir: _sass

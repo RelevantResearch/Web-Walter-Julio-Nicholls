@@ -44,6 +44,8 @@ menu_settings:
         url: "/publications/#commentaries-and-encyclopedia-entries"
     - title: 'Public Talks'
       url: '/public-talks/'
+    - title: 'Images'
+      url: '/images/'
 
 #-------------------------------
 # Author Settings
@@ -98,6 +100,9 @@ updates-item:
       - date: 
         content: "Add Announcement here."
 
+images:
+  images_title: "My Images"
+  images_description: "explore more"
 
 publication:
   enable: true
