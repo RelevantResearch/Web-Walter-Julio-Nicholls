@@ -383,3 +383,59 @@ h2#how-do-undocumented-immigrant-activists-challenge-the-status-quo, h2#city-and
       padding-bottom: 75%; /* Adjust height for smaller mobile screens */
   }
 }
+
+.back-to-home {
+  margin-bottom: 10px;
+  text-align: left; /* Align the button to the left */
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+h1.page-title {
+  margin-top: 0px;
+}
+
+/* Button Style */
+#loadMoreBtn {
+  background-color: #ffd200; /* Bright yellow color */
+  color: black; /* Text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding for better button size */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  display: block; /* Ensures the button is treated as a block-level element */
+  margin: 20px auto; /* Centers the button horizontally with auto margin */
+  
+  /* Add shadow to the button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* X, Y offset, blur radius, color */
+}
+
+#loadMoreBtn:hover {
+  background-color: #e6c200; /* Slightly darker yellow on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker and larger shadow on hover */
+}
+
+#loadMoreBtn:active {
+  background-color: #b38f00; /* Even darker yellow when clicked */
+  transform: scale(1); /* Reset the zoom effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow when clicked */
+}
+
+#loadMoreBtn:focus {
+  outline: none; /* Remove focus outline */
+}

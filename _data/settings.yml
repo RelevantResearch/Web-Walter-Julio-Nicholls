@@ -44,8 +44,8 @@ menu_settings:
         url: "/publications/#commentaries-and-encyclopedia-entries"
     - title: 'Public Talks'
       url: '/public-talks/'
-    - title: 'Images'
-      url: '/images/'
+    - title: 'My Gallery'
+      url: '/my-gallery/'
 
 #-------------------------------
 # Author Settings
@@ -60,27 +60,12 @@ author:
 
 
 #-------------------------------
-# Settings
-updates:
-  enable: true
-  updates_title: "Latest Updates"
-  updates_page_url: 
-  updates_description: "Stay informed with the latest events and announcements. Check back monthly for updates."
-
-update_items:
-  - date: "2024-09-01"
-    content: "[Update your latest update]"
-  - date: "2024-08-20"
-    content: "[Update your latest update]"
-  - date: "2024-08-15"
-    content: "[Update your latest update]"
-
 research:
   enable: true
   research_title: "My Research"
   research_description: 
 
-update:
+updates:
   enable: true
   updates_title: "Latest Updates"
   updates_page_url: "/updates"
@@ -101,8 +86,8 @@ updates-item:
         content: "Add Announcement here."
 
 images:
-  images_title: "My Images"
-  images_description: "explore more"
+  images_title: "My Gallery"
+  images_description: "Explore a collection of images that reflect the breadth and depth of my work, from engaging with students in the classroom to conducting field research in diverse urban settings."
 
 publication:
   enable: true
@@ -113,13 +98,6 @@ publication:
   publication_author:  # The name of the author
   publication_content: "This book traces the immigrant rights movement in the U.S., from its grassroots beginnings in the 1990s to its national prominence, especially during the 2016 election. Initially united around calls for comprehensive immigration reform, activists sought legal recognition for immigrants based on their ties to American values. Despite significant progress during the Obama era, the movement faced internal divisions and challenges in confronting mainstream narratives, ultimately becoming entangled within the system it aimed to change. <a href=\"https://www.amazon.com/Immigrant-Rights-Movement-National-Citizenship/dp/1503609324\"><b>Get it today!</b></a>"
 
-#-------------------------------
-# Projects Settings
-projects_settings:
-  enable: false
-  projects_title: Portfolio
-  projects_description:
-
 
 #-------------------------------
 # about settings
@@ -127,39 +105,6 @@ about_settings:
   enable: true
   about_title: "About Walter"
   about_description: "I am Dr. Walter Nicholls, Associate Professor of Urban Planning and Public Policy at the University of California, Irvine. My research centers on the role of cities in social movements and how immigrants develop political agency in hostile environments. I teach courses in urban sociology, immigration studies, and qualitative methods, with a focus on understanding the dynamics of cities, social change, and immigrant rights. My work seeks to inspire both academic inquiry and real-world action on these critical issues."
-
-
-
-#-------------------------------
-# Testimonials Settings
-testimonials:
-  enable: false
-  testimonials_title: Testimonials
-  testimonials_description:
-
-testimonial_items:
-  - name: "Albert Flores"
-    image: "/images/client-1.jpg"
-    designation: "Data Scientist"
-    content : "The incredible attention to detail displayed by this team is commendable. Every aspect of our project, no matter how small, was handled with precision and care. The result is a product that reflects their commitment to excellence."
-
-  - name: "Wade Warren"
-    image: "/images/client-2.jpg"
-    designation: "DevOps Engineer"
-    content : "Working with this creative powerhouse was an enlightening experience. Their brilliance in design thinking and creative solutions brought our project to life in ways we hadn't imagined. The team's passion for innovation is truly infectious."
-
-  - name: "Jenny Wilson"
-    image: "/images/client-3.jpg"
-    designation: "Systems Analyst"
-    content : "This team proved to be efficient problem solvers throughout our project. When faced with challenges, they tackled them with creativity and resourcefulness. Their ability to overcome obstacles ensured a smooth and successful project delivery."
-
-
-#-------------------------------
-# Blog Section
-blog_settings:
-  enable: false
-  blog_title: Writing
-  blog_description:
 
 
 #-------------------------------
@@ -170,27 +115,11 @@ videos_settings:
   videos_description:
 
 
-#-------------------------------
-# Gallery Section
-gallery_settings:
-  enable: false
-  gallery_title: Gallery
-  gallery_description:
 
 articles:
   enable: true
   articles_title: "Latest Publication"
   articles_description: "Explore my latest publications on a variety of topics."
-
-#-------------------------------
-# Newsletter Settings
-mailchimp_settings:
-  enable: true
-  mailchimp_identifier: gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
-  mailchimp_title: Get interesting news
-  mailchimp_description: Subscribe to our newsletter and we’ll send you the emails of latest posts.
-  mailchimp_input_text: Your email address...
-  mailchimp_button_text: Join Me # Add your button text
 
 
 #-------------------------------

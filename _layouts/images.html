@@ -2,8 +2,8 @@
 layout: page
 ---
 
-<div class="image-row">
-  {% for image in site.data.image.images %}
+<div class="image-row" id="image-container">
+  {% for image in site.data.image.images limit: 12 %} <!-- Show only the first 12 images initially -->
     <div class="image-column">
         <div class="img-hover-zoom">
             <img src="{{ image.src }}" alt="{{ image.alt }}">
@@ -11,6 +11,9 @@ layout: page
     </div>
   {% endfor %}
 </div>
+
+<!-- Load More Button -->
+<button id="loadMoreBtn" onclick="loadMoreImages()">Load More</button>
 
 <!-- Modal for image lightbox -->
 <div id="imageModal" class="modal">
@@ -35,3 +38,15 @@ layout: page
     </svg>
   </button>
 </div>
+
+<!-- Embed Image Data in a JavaScript Object -->
+<script>
+  window.imagesData = [
+    {% for image in site.data.image.images %}
+      {
+        src: "{{ image.src | relative_url }}",
+        alt: "{{ image.alt }}"
+      },
+    {% endfor %}
+  ];
+</script>

@@ -12,8 +12,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-paginate: 5  # Number of items per page
-paginate_path: "/images/page:num/"
 
 
 #-------------------------------
@@ -25,12 +23,6 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
-  videos:
-    output: true
-    permalink: /videos/:slug
-  gallery:
-    output: true
-    permalink: /gallery/:slug
   research:   
     output: true
     permalink: /research/:slug 
@@ -40,9 +32,6 @@ collections:
   updates:   
     output: true
     permalink: /updates/:slug 
-  update:   
-    output: true
-    permalink: /update/:slug 
   books:   
     output: true
     permalink: /books/:slug
@@ -64,16 +53,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "videos"
-    values:
-      layout: "video"
-  - scope:
-      path: ""
-      type: "gallery"
-    values:
-      layout: "gallery"
   - scope:   
       path: ""
       type: "research"
@@ -94,14 +73,6 @@ defaults:
       type: "books"
     values:
       layout: "books"
-  - scope:   
-      path: ""
-      type: "update"
-    values:
-      layout: "update"
-
-include:
-  - images
 
       
 sass:
