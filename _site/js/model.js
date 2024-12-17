@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('.img-hover-zoom img');
     imageSources = Array.from(images).map(img => img.src);
 
+    // Add event listeners to each image (initial ones)
     images.forEach((img) => {
         img.addEventListener("click", function() {
             openModal(img.src);
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Open the modal and display the clicked image
 function openModal(imageSrc) {
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
@@ -26,13 +28,14 @@ function openModal(imageSrc) {
         setTimeout(() => modal.style.opacity = "1", 100);  // Fade-in effect
     };
 
-    // In case image is already loaded, directly show the modal
+    // If the image is already loaded, show the modal immediately
     if (modalImage.complete) {
         modal.style.display = "block";
         modal.style.opacity = "1";
     }
 }
 
+// Close the modal with fade-out effect
 function closeModal() {
     const modal = document.getElementById("imageModal");
 
@@ -44,6 +47,7 @@ function closeModal() {
     }, 500);
 }
 
+// Change the image in the modal (next or previous)
 function changeImage(direction) {
     currentIndex += direction;
 
@@ -55,4 +59,17 @@ function changeImage(direction) {
 
     const modalImage = document.getElementById("modalImage");
     modalImage.src = imageSources[currentIndex];
+}
+
+// Function to add event listeners to newly loaded images (called by loadMoreImages)
+function addImageClickListeners() {
+    const images = document.querySelectorAll('.img-hover-zoom img');
+    imageSources = Array.from(images).map(img => img.src);  // Update imageSources array
+
+    // Add click event listener for each image
+    images.forEach((img) => {
+        img.addEventListener("click", function() {
+            openModal(img.src);
+        });
+    });
 }

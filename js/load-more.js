@@ -1,4 +1,3 @@
-// JavaScript for loading more images dynamically
 let displayedImages = 12;  // Initialize with the first 12 images displayed
 
 function loadMoreImages() {
@@ -32,5 +31,8 @@ function loadMoreImages() {
     if (displayedImages >= window.imagesData.length) {
       document.getElementById('loadMoreBtn').style.display = 'none';
     }
+
+    // Add event listeners to newly loaded images
+    addImageClickListeners();
   }
 }
