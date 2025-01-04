@@ -66,7 +66,7 @@ research:
   research_description: 
 
 updates:
-  enable: true
+  enable: false
   updates_title: "Latest Updates"
   updates_page_url: "/updates"
   updates_description: "Stay informed with the latest events and announcements. Check back monthly for updates."
