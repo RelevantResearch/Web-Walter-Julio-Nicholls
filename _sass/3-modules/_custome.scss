@@ -439,3 +439,11 @@ h1.page-title {
 #loadMoreBtn:focus {
   outline: none; /* Remove focus outline */
 }
+
+.social__link i {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.social__link:hover i {
+  transform: scale(1.2); /* Scale the icon to 120% of its original size */
+}
